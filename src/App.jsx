@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        <p className="font-bold bg-zinc-600">Hello</p>
+        <p className="font-bold bg-zinc-600">Just Testing.........</p>
         <FunctionalComponent />
         <ProductList />
       </div>
