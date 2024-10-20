@@ -1,9 +1,11 @@
 import "./App.css";
 import Counter from "./components/Counter";
+import Fetch from "./components/Fetch";
 import FunctionalComponent from "./components/functional-component";
 import ItemList from "./components/ItemList";
 import ProductList from "./components/products";
 import ShowInput from "./components/ShowInput";
+import Timer from "./components/Timer";
 import Toggle from "./components/Toggle";
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
         <p className="font-bold bg-zinc-600">Just Testing.........</p>
         {/* <FunctionalComponent /> */}
         {/* <ProductList /> */}
-       <Toggle/>
+       <Timer/>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
