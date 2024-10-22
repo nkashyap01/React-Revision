@@ -6,6 +6,7 @@ import ItemList from "./components/ItemList";
 import ProductList from "./components/products";
 import ShowInput from "./components/ShowInput";
 import Timer from "./components/Timer";
+import ToDo from "./components/ToDo";
 import Toggle from "./components/Toggle";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <p className="font-bold bg-zinc-600">Just Testing.........</p>
         {/* <FunctionalComponent /> */}
         {/* <ProductList /> */}
-       <Timer/>
+       <ToDo/>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
