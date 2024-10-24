@@ -13,7 +13,7 @@ const Routing = () => {
                     <Link to='/'>Counter</Link>
                 </li>
                 <li>
-                    <Link to='/time'>Timer</Link>
+                    <Link to='/timer'>Timer</Link>
                 </li>
             </ul>
         </nav>

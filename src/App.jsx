@@ -5,6 +5,7 @@ import Fetch from "./components/Fetch";
 import FunctionalComponent from "./components/functional-component";
 import ItemList from "./components/ItemList";
 import ProductList from "./components/products";
+import RandomQuote from "./components/RandomQuote";
 import Routing from "./components/Routing";
 import ShowInput from "./components/ShowInput";
 import Timer from "./components/Timer";
@@ -18,7 +19,7 @@ function App() {
         <p className="font-bold bg-zinc-600">Just Testing.........</p>
         {/* <FunctionalComponent /> */}
         {/* <ProductList /> */}
-        <Routing/>
+        <RandomQuote/>
       
       </div>
       <p className="read-the-docs">
