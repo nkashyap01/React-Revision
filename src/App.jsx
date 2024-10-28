@@ -4,6 +4,7 @@ import Counter from "./components/Counter";
 import Fetch from "./components/Fetch";
 import FunctionalComponent from "./components/functional-component";
 import ItemList from "./components/ItemList";
+import Login from "./components/Login";
 import ProductList from "./components/products";
 import RandomQuote from "./components/RandomQuote";
 import Routing from "./components/Routing";
@@ -19,7 +20,7 @@ function App() {
         <p className="font-bold bg-zinc-600">Just Testing.........</p>
         {/* <FunctionalComponent /> */}
         {/* <ProductList /> */}
-        <RandomQuote/>
+        <Login/>
       
       </div>
       <p className="read-the-docs">
