@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import ProductList from "./components/products";
 import RandomQuote from "./components/RandomQuote";
 import Routing from "./components/Routing";
+import SearchFilter from "./components/SearchFilter";
 import ShowInput from "./components/ShowInput";
 import Timer from "./components/Timer";
 import ToDo from "./components/ToDo";
@@ -20,7 +21,7 @@ function App() {
         <p className="font-bold bg-zinc-600">Just Testing.........</p>
         {/* <FunctionalComponent /> */}
         {/* <ProductList /> */}
-        <Login/>
+        <SearchFilter/>
       
       </div>
       <p className="read-the-docs">
