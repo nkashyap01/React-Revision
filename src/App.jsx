@@ -2,6 +2,7 @@ import "./App.css";
 import ChangeBg from "./components/ChangeBg";
 import Counter from "./components/Counter";
 import Fetch from "./components/Fetch";
+import Filter from "./components/Filter";
 import FunctionalComponent from "./components/functional-component";
 import ItemList from "./components/ItemList";
 import Login from "./components/Login";
@@ -15,13 +16,14 @@ import ToDo from "./components/ToDo";
 import Toggle from "./components/Toggle";
 
 function App() {
+  const items = ["item1", "item2", "item3", "item4", "item4"]
   return (
     <>
       <div>
         <p className="font-bold bg-zinc-600">Just Testing.........</p>
         {/* <FunctionalComponent /> */}
         {/* <ProductList /> */}
-        <SearchFilter/>
+        <Filter items={items}/>
       
       </div>
       <p className="read-the-docs">
