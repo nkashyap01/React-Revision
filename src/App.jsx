@@ -20,10 +20,11 @@ import Toggle from "./components/Toggle";
 import ChildA from "./hooks/ChildA";
 
 
-const UserContext = createContext();
+const ThemeContext = createContext();
 function App() {
   // const items = ["item1", "item2", "item3", "item4", "item4"]
- const [user, setUser] = useState({name:"neha"})
+  const [theme, setTheme] = useState('light');
+
   return (
     <>
       <div>
@@ -33,10 +34,12 @@ function App() {
         {/* <Filter items={items}/> */}
         {/* <CartProvider> <ShoppingCart/></CartProvider> */}
 
-
-       <UserContext.Provider value={user}> 
-        <ChildA />
-       </UserContext.Provider>
+<ThemeContext.Provider value={{theme, setTheme}}>
+ <div className={`border-b-2 ${theme=='light'?'bg-gray-600':'bg-black'} h-[200px] w-[500px] flex items-center justify-center`}>
+ <ChildA/>
+ </div>
+</ThemeContext.Provider>
+      
       
       </div>
       <p className="read-the-docs">
@@ -47,4 +50,5 @@ function App() {
 }
 
 export default App;
-export {UserContext};
+export {ThemeContext};
+
