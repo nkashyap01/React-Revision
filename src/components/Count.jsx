@@ -34,30 +34,95 @@
 
 // *****UseEffect
 
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 
-const Count = () => {
+// const Count = () => {
 
-const [count, setCount] = useState(0)
+// const [count, setCount] = useState(0)
 
-useEffect(()=>{
-  setTimeout(()=>{
-    setCount(count+1)
-  },1000)
-})
-  return (
-    <div>
+// useEffect(()=>{
+//   setTimeout(()=>{
+//     setCount(count+1)
+//   },1000)
+// })
+//   return (
+//     <div>
     
-    <h1>I have rendered: {count} times </h1>
-    </div>
-  )
-}
+//     <h1>I have rendered: {count} times </h1>
+//     </div>
+//   )
+// }
 
-export default Count
+// export default Count
 
 
 
 /****useRef */
 
+// import React, { useEffect, useRef, useState } from 'react'
 
+// const Count = () => {
+// //   const [value, setValue] = useState(0)
+  
+// //   const count = useRef(0)
+// // useEffect(()=>{
+// //   count.current=count.current + 1
+// // })
+
+// const inputElem = useRef()
+
+// const btnClicked= ()=>{
+//   console.log(inputElem.current.value)
+//   inputElem.current.style.background="blue";
+// }
+
+//   return (
+
+
+//     <div>
+//       {/* <button onClick={()=>{setValue(prev=>prev-1)}}>-1</button>
+//       <h1>{value}</h1>
+//       <button onClick={()=>{setValue(prev=>prev+1)}}>+1</button>
+//       <h1>Render times :{count}</h1> */}
+       
+
+//       <input type ="text" ref={inputElem}/>
+//       <button onClick={btnClicked}> Click Here</button>
+//     </div>
+//   )
+// }
+
+// export default Count
  
+
+
+
+///*****useMemo */
+
+import React, { useMemo, useState } from 'react'
+
+const Count = () => {
+  const [number, setNumber] = useState(0)
+  const [counter, setCounter] = useState(0)
+  function cubeNum(num){
+    console.log("calculation done")
+    return Math.pow(num, 3);
+
+  }
+
+  const result = useMemo(()=>cubeNum(number),[number])
+  return (
+    <div>
+      <input type="number" value={number} onChange={(e)=>{
+        setNumber(e.target.value)
+      }}/>
+      <h1>Cube of the number:{result}</h1>
+
+      <button onClick={()=>{setCounter(counter+1)}}>Counter++</button>
+      <h1>{counter}</h1>
+
+    </div>
+  )
+}
+
+export default Count
