@@ -1,5 +1,6 @@
 // import { createContext, useState } from "react";
 import "./App.css";
+import Accordian from "./components/Accordian";
 // import { CartProvider } from "./components/CartContext";
 // import ChangeBg from "./components/ChangeBg";
 import Count from "./components/Count";
@@ -40,7 +41,7 @@ function App() {
  <ChildA/>
  </div>
 </ThemeContext.Provider> */}
-      <Count/>
+      <Accordian/>
       
       </div>
      
