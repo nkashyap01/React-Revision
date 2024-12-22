@@ -4,6 +4,7 @@ import Accordian from "./components/Accordian";
 // import { CartProvider } from "./components/CartContext";
 // import ChangeBg from "./components/ChangeBg";
 import Count from "./components/Count";
+import StarRating from "./components/products/StarRating";
 // import Counter from "./components/Counter";
 // import Fetch from "./components/Fetch";
 // import Filter from "./components/Filter";
@@ -41,8 +42,8 @@ function App() {
  <ChildA/>
  </div>
 </ThemeContext.Provider> */}
-      <Accordian/>
-      
+      {/* <Accordian/> */}
+      <StarRating noOfStars={5}/>
       </div>
      
     </>

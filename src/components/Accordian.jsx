@@ -5,6 +5,8 @@ import qaData from './data'
 
 const Accordian = () => {
     const [selected, setSelected] = useState(null)
+    const [enableMultiSelection, setEnableMultiSelection] = useState(false)
+    const [multiple, setMultiple] = useState([])
     function handleSingleSelection(getCurrentId){
         setSelected(getCurrentId === selected ? null : getCurrentId );
 
