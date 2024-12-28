@@ -5,7 +5,7 @@ import Accordian from "./components/Accordian";
 // import ChangeBg from "./components/ChangeBg";
 import Count from "./components/Count";
 import StarRating from "./components/products/StarRating";
-// import Counter from "./components/Counter";
+import Counter from "./components/Counter";
 // import Fetch from "./components/Fetch";
 // import Filter from "./components/Filter";
 // import FunctionalComponent from "./components/functional-component";
@@ -43,7 +43,8 @@ function App() {
  </div>
 </ThemeContext.Provider> */}
       {/* <Accordian/> */}
-      <StarRating noOfStars={5}/>
+      {/* <StarRating noOfStars={5}/> */}
+      <Counter/>
       </div>
      
     </>
