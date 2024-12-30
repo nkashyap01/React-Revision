@@ -21,6 +21,10 @@
 // Custom Input - Allows the user to set a custom count value.
 // Count History - Tracks and displays the history of count values.
 // Input Validation - Ensures that only valid numeric inputs are allowed.
+// Clear History
+// Undo Last Action
+// 
+// 
 // *****************************************************************************
 
 
@@ -30,9 +34,11 @@ const Counter = () => {
   const [count, setCount] = useState(0)
   const [customInput, setCustomInput] = useState(0)
   const [history, setHistory] = useState([]);
+const [previousCount, setPreviousCount] = useState(null);
 
   function increaseCount(){
     if (count > 0) {
+      setPreviousCount(count)
       setCount(count + 1)
       setHistory([...history, count])
     }
@@ -40,11 +46,13 @@ const Counter = () => {
   }
   function decreaseCount() {
     if (count > 0) {
+      setPreviousCount(count)
       setCount(count - 1)
       setHistory([...history, count])
     }
   }
   function resetCount() {
+    setPreviousCount(count)
     setCount(0);
     setHistory([...history, count])
   }
@@ -58,13 +66,25 @@ const Counter = () => {
     const customNumber = parseInt(customInput,10)
     if(!isNaN(customNumber)){
 
-    
+    setPreviousCount(count)
       setCount(customNumber)
       setHistory([...history, customNumber])
     }
     
     else
     alert("please enter a valid number")
+
+  }
+
+  function clearHistory(){
+    setHistory([])
+  }
+
+  function undoLastAction(){
+   if(previousCount!=null){
+    setCount(previousCount)
+    setHistory([...history, previousCount])
+   }
 
   }
   return (
@@ -85,6 +105,8 @@ const Counter = () => {
       <button onClick={decreaseCount}> Decrement </button>
       </div>
     <h1>History</h1>
+    <button onClick={undoLastAction}>Undo Last Action</button>
+    <button onClick={clearHistory}>Clear History</button>
     
         <ul>
           {
