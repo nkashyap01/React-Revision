@@ -1,11 +1,8 @@
 // import { createContext, useState } from "react";
 import "./App.css";
-import Accordian from "./components/Accordian";
+import Traffic from "./trafficLights/Traffic";
 // import { CartProvider } from "./components/CartContext";
 // import ChangeBg from "./components/ChangeBg";
-import Count from "./components/Count";
-import StarRating from "./components/products/StarRating";
-import Counter from "./components/Counter";
 // import Fetch from "./components/Fetch";
 // import Filter from "./components/Filter";
 // import FunctionalComponent from "./components/functional-component";
@@ -44,7 +41,7 @@ function App() {
 </ThemeContext.Provider> */}
       {/* <Accordian/> */}
       {/* <StarRating noOfStars={5}/> */}
-      <Counter/>
+      <Traffic/>
       </div>
      
     </>
