@@ -1,6 +1,8 @@
 // import { createContext, useState } from "react";
 import "./App.css";
-import Traffic from "./trafficLights/Traffic";
+
+import Faq from "./practiceApps/accordian/Faq";
+
 // import { CartProvider } from "./components/CartContext";
 // import ChangeBg from "./components/ChangeBg";
 // import Fetch from "./components/Fetch";
@@ -41,7 +43,7 @@ function App() {
 </ThemeContext.Provider> */}
       {/* <Accordian/> */}
       {/* <StarRating noOfStars={5}/> */}
-      <Traffic/>
+  <Faq/>
       </div>
      
     </>
