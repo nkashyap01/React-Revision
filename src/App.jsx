@@ -1,6 +1,6 @@
 
 import "./App.css";
-import TicTacToe from "./practiceApps/ticTacToe/TicTacToe";
+import Count from "./practiceApps/redux/Count";
 
 
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <div>
         <p className="font-bold bg-zinc-600">Just Testing.........</p>
-      <TicTacToe/>
+      <Count/>
   
       </div>
      
