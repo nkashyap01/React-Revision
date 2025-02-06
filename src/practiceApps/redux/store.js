@@ -1,19 +1,8 @@
-import {createStore} from "redux" //deprecated
+import { configureStore } from '@reduxjs/toolkit';
+import cartReducer from './slices/cartSlice';
 
-const reducer = (state=0, action) =>{
-    switch(action.type){
-        case  "increment":
-            return state+1
-            case "decrement":
-            return state-1
-            default :
-            return state
-    }
-}
-
-export const store = createStore(reducer);
-
-
-
-
-
+export const store = configureStore({
+    reducer: {
+        cart: cartReducer,
+    },
+});

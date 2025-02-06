@@ -1,0 +1,40 @@
+
+[
+    {
+      "id": 1,
+      "name": "Wireless Bluetooth Headphones",
+      "price": 49.99,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone 12 Pro",
+      "price": 999.99,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Gaming Keyboard",
+      "price": 79.99,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 4,
+      "name": "4K Ultra HD Monitor",
+      "price": 299.99,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 5,
+      "name": "Portable Speaker",
+      "price": 24.99,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+    },
+    {
+        "id": 6,
+        "name": "Portable Laptop",
+        "price": 24.99,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+      }
+  ]
+  

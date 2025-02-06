@@ -1,6 +1,8 @@
-
+import products from "./products.json"
 import "./App.css";
-import Count from "./practiceApps/redux/Count";
+import Cart from "./practiceApps/cartComponent/Cart";
+import Product from "./practiceApps/cartComponent/Product";
+
 
 
 
@@ -11,7 +13,12 @@ function App() {
     <>
       <div>
         <p className="font-bold bg-zinc-600">Just Testing.........</p>
-      <Count/>
+    <Cart/>
+    <div className="flex flex-wrap">
+     {products.map((product)=>(
+      <Product {...product}/>
+     ))}
+    </div>
   
       </div>
      
@@ -20,4 +27,6 @@ function App() {
 }
 
 export default App;
+
+
 
